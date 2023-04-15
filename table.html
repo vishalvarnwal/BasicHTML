@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Practice</title>
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td,
+      th {
+        padding: 10px;
+      }
+      table {
+        margin-bottom: 20px;
+      }
+      caption {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- eg of col span and row span -->
+    <table>
+      <caption>
+        My 1st Table
+      </caption>
+      <tr>
+        <td rowspan="2">State of Health</td>
+        <td colspan="2">Fasting Value</td>
+        <td>After Eating</td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Maximum</td>
+        <td>2 hours after eating</td>
+      </tr>
+      <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>Less than 140</td>
+      </tr>
+      <tr>
+        <td>Pre-Diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>N/A</td>
+        <td>More than 200</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>
+        My 2nd Table
+      </caption>
+      <tr>
+        <th colspan="6">Time Table</th>
+      </tr>
+      <tr>
+        <td rowspan="6">Hours</td>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Scinece</td>
+        <td>Maths</td>
+        <td>Arts</td>
+      </tr>
+      <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+        <td>Sports</td>
+      </tr>
+      <tr>
+        <th colspan="5">Lunch</th>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td rowspan="2">Project</td>
+      </tr>
+      <tr>
+        <td>social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+      </tr>
+    </table>
+
+    <!-- colgroup - used to give style to speific columns, so all the cell of that columns will contain the style -->
+    <table>
+      <caption>
+        My 3rd Table
+      </caption>
+      <colgroup>
+        <col span="1" style="background-color: green;"></colgroup>
+        <col span="3" style="background-color: yellow;"></colgroup>
+        <col span="1" style="background-color: red;"></colgroup>
+      </colgroup>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+        <td>Col 4</td>
+        <td>Col 5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+    </table>
+  </body>
+</html>
